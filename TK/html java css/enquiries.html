@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TK CINEMAS </title>
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>TK CINEMAS </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Home..html">HOME</a></li>
+            <li><a href="Movies.html">Movies In Cinnema</a></li>
+            <li><a href="Contactus.html">Contact Us</a></li>
+			<li><a href="Answer.html"> Question 1</a></li>
+			<li><a href="enquiries.html">Enquiries</a></li>
+			<li><a href="company prfile.html">Company Profile</a></li>
+			
+        </ul>
+    </nav>
+    <main>
+        
+<h2>Enquiries</h2>
+            
+        <div class="container">
+           <form id="enquiryForm" onsubmit="return validateForm()">
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Name :</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="name" name="name" placeholder="Text only field" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="phone">Phone :</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="phone" name="phone" placeholder="Numeric only field" pattern="[0-9]{10}" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="email">Email :</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="email" name="email" placeholder="Email formatted alphanumeric field" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="enquiry">Enquiry :</label>
+              </div>
+              <div class="col-75">
+                <textarea id="enquiry" name="enquiry" placeholder="Write something.." style="height:200px"></textarea>
+              </div>
+            </div>
+        
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 TK CINEMAS</p>
+    </footer>
+</body>
+</html>
